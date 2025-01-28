@@ -1,0 +1,66 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage[top=1cm]{geometry} % Adjust the top margin to 1cm (or any desired value
+\begin{document}
+
+\section*{Explanation of \( a \leq \frac{s-3}{3} \) and \( b < \frac{s-a}{2} \)}
+
+Problem 9. Find the only Pythagorean triplet (a, b, c), for which a + b + c = 1000.
+
+We are given:
+\begin{itemize}
+    \item \( a \), \( b \), and \( c \) are positive integers.
+    \item \( a < b < c \).
+\end{itemize}
+
+We want to find the range of possible values for \( a \) and \( b \).
+
+\subsection*{Deriving \( a \leq \frac{s-3}{3} \)}
+
+Since \( a < b < c \), the smallest possible value for \( a \) is \( 1 \). To find the maximum possible value for \( a \), we consider the smallest possible values for \( b \) and \( c \):
+
+\begin{itemize}
+    \item The smallest \( b \) can be is \( a + 1 \) (since \( a < b \)).
+    \item The smallest \( c \) can be is \( b + 1 = a + 2 \) (since \( b < c \)).
+\end{itemize}
+
+Substitute these into the equation \( a + b + c = s \):
+\[
+a + (a + 1) + (a + 2) = s
+\]
+\[
+3a + 3 = s
+\]
+\[
+3a = s - 3
+\]
+\[
+a = \frac{s - 3}{3}
+\]
+
+This gives the maximum possible value for \( a \). Therefore:
+\[
+a \leq \frac{s - 3}{3}
+\]
+
+\subsection*{Deriving \( b < \frac{s - a}{2} \)}
+
+Next, we find the range for \( b \). Given \( a < b < c \) and \( a + b + c = s \), we can express \( c \) as:
+\[
+c = s - a - b
+\]
+
+Since \( b < c \), we have:
+\[
+b < s - a - b
+\]
+\[
+2b < s - a
+\]
+\[
+b < \frac{s - a}{2}
+\]
+
+This inequality gives the upper bound for \( b \) in terms of \( a \) and \( s \).
+
+\end{document}
