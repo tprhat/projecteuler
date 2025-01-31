@@ -1,4 +1,4 @@
-def findPrimes(n: int) -> int:
+def find_primes(n: int) -> int:
     primes = [2, 3, 5]
     i = 7
     while len(primes) < n:
@@ -16,4 +16,4 @@ def is_prime(x: int, primes: list) -> bool:
 
 
 if __name__ == "__main__":
-    print(findPrimes(10001))
+    print(find_primes(10001))
